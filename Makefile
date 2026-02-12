@@ -1,4 +1,4 @@
-.PHONY: install test lint format clean notebook mlflow
+.PHONY: install test lint format clean notebook mlflow gui
 
 install:
 	pip install -e ".[dev]"
@@ -26,3 +26,6 @@ notebook:
 
 mlflow:
 	mlflow ui
+
+gui:
+	streamlit run app.py
