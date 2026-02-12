@@ -1,0 +1,89 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Jupyter Notebooks =====
+.ipynb_checkpoints/
+*.ipynb_metadata/
+
+# ===== IDE / Editor =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Data files (large / sensitive) =====
+# Large data formats — use DVC or external storage for big files
+*.csv.gz
+*.hdf5
+*.parquet
+*.feather
+
+# Do NOT ignore evidence_matrix.csv — that's tracked
+!02_EVIDENCE_MATRIX/evidence_matrix.csv
+
+# ===== ML artifacts =====
+mlruns/
+mlflow.db
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.h5
+wandb/
+
+# ===== Results artifacts (large) =====
+results/figures/*.png
+results/figures/*.pdf
+results/figures/*.svg
+
+# ===== LaTeX / Dissertation build =====
+05_DISSERTATION/**/*.aux
+05_DISSERTATION/**/*.log
+05_DISSERTATION/**/*.bbl
+05_DISSERTATION/**/*.blg
+05_DISSERTATION/**/*.toc
+05_DISSERTATION/**/*.out
+05_DISSERTATION/**/*.fdb_latexmk
+05_DISSERTATION/**/*.fls
+05_DISSERTATION/**/*.synctex.gz
+
+# ===== Secrets / credentials =====
+.env
+*.key
+credentials/
+
+# ===== Miscellaneous =====
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+coverage.xml
+.coverage
